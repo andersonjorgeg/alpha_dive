@@ -9,6 +9,7 @@ lerna-debug.log*
 
 # Config/Dependencies
 node_modules/
+planejamento/
 package-lock.json
 yarn.lock
 
@@ -45,4 +46,3 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-planejamento/
