@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR">
+
+<head>
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' http://localhost:* ws://localhost:* wss://localhost:* https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://localhost:* https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:;">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+
+
+</head>
+
+<body class="bg-background text-on-background font-body-md">
+    <header
+        class="bg-white/80 dark:bg-slate-950/80 backdrop-blur-md text-[#002347] dark:text-slate-100 font-['Inter'] font-medium uppercase tracking-wider text-sm docked full-width top-0 sticky z-50 border-b border-slate-200 dark:border-slate-800 shadow-sm">
+        <div class="flex justify-between items-center w-full px-8 md:px-20 py-4 max-w-full">
+            <div class="text-2xl font-black tracking-tighter text-[#002347] dark:text-white">
+                Alpha Dive
+            </div>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-[#002347] border-b-2 border-[#CEDC00] pb-1 font-bold" href="#home">Home</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-[#002347] dark:hover:text-white transition-colors"
+                    href="#servicos">Serviços</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-[#002347] dark:hover:text-white transition-colors"
+                    href="#empresa">Empresa</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-[#002347] dark:hover:text-white transition-colors"
+                    href="#portfolio">Portfólio</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-[#002347] dark:hover:text-white transition-colors"
+                    href="#clientes">Clientes</a>
+            </nav>
+            <button
+                class="bg-[#002347] text-white px-6 py-2 rounded-none font-bold hover:bg-opacity-90 transition-all active:scale-95"
+                onclick="document.getElementById('contato').scrollIntoView({behavior:'smooth'})">Contato</button>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <!-- Hero Section -->
+            <section class="relative min-h-[921px] flex items-center justify-center overflow-hidden">
+                <div class="absolute inset-0 z-0">
+                    <img class="w-full h-full object-cover"
+                        data-alt="cinematic underwater shot of an offshore structure with sunlight piercing through clear blue water and professional divers working"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaVQfNX0M_kokIwtvKwbH9i_0Ch3nPbCurIZZz449sZcYL57njsu2-O3WXk9LLFnz6Yt1luNnBnUuOLdAxDlGVvVye-Snf2sMCl-LE6hMSWhtgVcGL1fM2C67CZjAk_5sLzIo6maSXPLLhy4Ns4_PK2beG_O_lVodlEHq-YMTg4EadRUrLAT79J-IhPp4_zZvwhp2K1CiD3q2lYzv8pMCIaR1chU1-u7VqjvxEGzmO64tz9vTVaLhmey5v8kGID7jVEfgw4L9i375t" />
+                    <div class="absolute inset-0 hero-overlay"></div>
+                </div>
+                <div
+                    class="relative z-10 container mx-auto px-8 md:px-20 text-white text-center md:text-left max-w-7xl">
+                    <h1 class="font-display-xl text-display-xl mb-6 max-w-4xl">
+                        Mergulho Profissional e Serviços Offshore
+                    </h1>
+                    <p class="font-body-lg text-body-lg mb-4 text-slate-200 max-w-2xl">
+                        Soluções subaquáticas com segurança, tecnologia e precisão operacional.
+                    </p>
+                    <p class="font-body-md text-body-md mb-10 text-slate-300 max-w-2xl">
+                        Referência em engenharia submarina, atendendo aos mais rigorosos padrões da indústria offshore
+                        com
+                        equipes altamente qualificadas.
+                    </p>
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <a class="bg-[#CEDC00] text-[#002347] px-8 py-4 font-bold text-sm uppercase tracking-widest hover:brightness-110 transition-all text-center"
+                            href="#servicos">
+                            Conheça nossos serviços
+                        </a>
+                        <a class="border border-white text-white px-8 py-4 font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-[#002347] transition-all text-center"
+                            href="#contato">
+                            Fale com nossa equipe
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- About Section -->
+            <section class="py-xl bg-surface-container-lowest">
+                <div class="container mx-auto px-8 md:px-20 max-w-7xl">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                        <div>
+                            <span class="text-[#CEDC00] font-label-sm uppercase tracking-widest mb-4 block">Excelência
+                                Subaquática</span>
+                            <h2 class="font-headline-lg text-headline-lg text-primary-container mb-8">Sobre a Alpha Dive
+                            </h2>
+                            <div class="space-y-4 text-on-surface-variant font-body-md">
+                                <p>
+                                    Com uma trajetória consolidada na indústria marítima e offshore, a Alpha Dive nasceu
+                                    da
+                                    necessidade de oferecer serviços de mergulho que unem o rigor da engenharia com a
+                                    agilidade das operações de campo.
+                                </p>
+                                <p>
+                                    Nossa missão é garantir a integridade de ativos submarinos através de intervenções
+                                    precisas, utilizando o que há de mais moderno em tecnologia ROV e equipamentos de
+                                    mergulho saturado e raso.
+                                </p>
+                            </div>
+                            <div class="mt-8 grid grid-cols-2 gap-8 border-t border-outline-variant pt-8">
+                                <div>
+                                    <p class="text-3xl font-black text-primary-container">+10</p>
+                                    <p class="text-sm font-medium text-outline">Anos de Experiência</p>
+                                </div>
+                                <div>
+                                    <p class="text-3xl font-black text-primary-container">100%</p>
+                                    <p class="text-sm font-medium text-outline">Segurança Certificada</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div
+                                class="aspect-[4/5] bg-surface-container-high rounded-none overflow-hidden border-8 border-white shadow-xl">
+                                <img class="w-full h-full object-cover"
+                                    data-alt="close up of a professional offshore diver in heavy helmet equipment prepared for deep sea mission"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK3ZXAa8AcX_9F8Qo-rMhoepL8kG50IOi-99X0aE081NKF35zz0uHrVpWbEqnMsismSNigrsqOVI-Kh-6CqqEXGbVa1xsoY-EBTdfTf33MRlTlqJTI6HDRkYzrYzZcT4hYbBSuhtOi7rdUAlgkOSG0k8RASWB5ROUM4z_sUTWQ8RjLVldVmqozTiK5XL8qmQU1LDDkectQXlXU5SoQNvcgzD-HdZDGbsFB5UhWahEUHrGQpsi4yc2da3DEqV2ffv8nLkyGDJ1KojHI" />
+                            </div>
+                            <div class="absolute -bottom-8 -left-8 bg-[#002347] p-8 text-white hidden md:block">
+                                <p class="font-headline-md italic">"Precisão em cada centímetro abaixo da superfície."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Services Section -->
+            <section class="py-xl bg-surface" id="servicos">
+                <div class="container mx-auto px-8 md:px-20 max-w-7xl">
+                    <div class="text-center mb-16">
+                        <h2 class="font-headline-lg text-headline-lg text-primary-container mb-4">Nossos Serviços</h2>
+                        <div class="w-20 h-1 bg-[#CEDC00] mx-auto"></div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Service Card 1 -->
+                        <div
+                            class="bg-white border border-outline-variant p-8 group hover:border-primary-container transition-all flex flex-col h-full">
+                            <span class="material-symbols-outlined text-[#002347] text-4xl mb-6">search_insights</span>
+                            <h3 class="font-headline-md text-headline-md text-primary-container mb-4">Inspeção
+                                Subaquática
+                            </h3>
+                            <p class="text-on-surface-variant font-body-md mb-6 flex-grow">
+                                Inspeções visuais e instrumentadas em cascos, tanques, e estruturas offshore seguindo
+                                protocolos internacionais.
+                            </p>
+                            <a class="flex items-center gap-2 text-primary-container font-bold text-sm uppercase tracking-widest group-hover:gap-4 transition-all"
+                                href="#">
+                                Ver detalhes <span class="material-symbols-outlined text-[#CEDC00]">arrow_forward</span>
+                            </a>
+                        </div>
+                        <!-- Service Card 2 -->
+                        <div
+                            class="bg-white border border-outline-variant p-8 group hover:border-primary-container transition-all flex flex-col h-full">
+                            <span class="material-symbols-outlined text-[#002347] text-4xl mb-6">build</span>
+                            <h3 class="font-headline-md text-headline-md text-primary-container mb-4">Manutenção
+                                Offshore
+                            </h3>
+                            <p class="text-on-surface-variant font-body-md mb-6 flex-grow">
+                                Manutenção preventiva e corretiva de infraestruturas, garantindo a continuidade
+                                operacional
+                                e segurança de ativos.
+                            </p>
+                            <a class="flex items-center gap-2 text-primary-container font-bold text-sm uppercase tracking-widest group-hover:gap-4 transition-all"
+                                href="#">
+                                Ver detalhes <span class="material-symbols-outlined text-[#CEDC00]">arrow_forward</span>
+                            </a>
+                        </div>
+                        <!-- Service Card 3 -->
+                        <div
+                            class="bg-white border border-outline-variant p-8 group hover:border-primary-container transition-all flex flex-col h-full">
+                            <span
+                                class="material-symbols-outlined text-[#002347] text-4xl mb-6">precision_manufacturing</span>
+                            <h3 class="font-headline-md text-headline-md text-primary-container mb-4">Operações com ROV
+                            </h3>
+                            <p class="text-on-surface-variant font-body-md mb-6 flex-grow">
+                                Suporte tecnológico com veículos operados remotamente para inspeções em profundidades
+                                elevadas.
+                            </p>
+                            <a class="flex items-center gap-2 text-primary-container font-bold text-sm uppercase tracking-widest group-hover:gap-4 transition-all"
+                                href="#">
+                                Ver detalhes <span class="material-symbols-outlined text-[#CEDC00]">arrow_forward</span>
+                            </a>
+                        </div>
+                        <!-- Service Card 4 -->
+                        <div
+                            class="bg-white border border-outline-variant p-8 group hover:border-primary-container transition-all flex flex-col h-full">
+                            <span class="material-symbols-outlined text-[#002347] text-4xl mb-6">handyman</span>
+                            <h3 class="font-headline-md text-headline-md text-primary-container mb-4">Corte e Solda</h3>
+                            <p class="text-on-surface-variant font-body-md mb-6 flex-grow">
+                                Serviços especializados de oxicorte e soldagem subaquática com profissionais
+                                certificados
+                                AWS.
+                            </p>
+                            <a class="flex items-center gap-2 text-primary-container font-bold text-sm uppercase tracking-widest group-hover:gap-4 transition-all"
+                                href="#">
+                                Ver detalhes <span class="material-symbols-outlined text-[#CEDC00]">arrow_forward</span>
+                            </a>
+                        </div>
+                        <!-- Service Card 5 -->
+                        <div
+                            class="bg-white border border-outline-variant p-8 group hover:border-primary-container transition-all flex flex-col h-full">
+                            <span class="material-symbols-outlined text-[#002347] text-4xl mb-6">verified</span>
+                            <h3 class="font-headline-md text-headline-md text-primary-container mb-4">Inspeções de
+                                Classe
+                            </h3>
+                            <p class="text-on-surface-variant font-body-md mb-6 flex-grow">
+                                Homologação por sociedades classificadoras para vistorias de renovação de classe em
+                                embarcações.
+                            </p>
+                            <a class="flex items-center gap-2 text-primary-container font-bold text-sm uppercase tracking-widest group-hover:gap-4 transition-all"
+                                href="#">
+                                Ver detalhes <span class="material-symbols-outlined text-[#CEDC00]">arrow_forward</span>
+                            </a>
+                        </div>
+                        <!-- Service Card 6 -->
+                        <div
+                            class="bg-white border border-outline-variant p-8 group hover:border-primary-container transition-all flex flex-col h-full">
+                            <span class="material-symbols-outlined text-[#002347] text-4xl mb-6">photo_camera</span>
+                            <h3 class="font-headline-md text-headline-md text-primary-container mb-4">Mídia Submarina
+                            </h3>
+                            <p class="text-on-surface-variant font-body-md mb-6 flex-grow">
+                                Filmagem e fotografia de alta resolução para documentação técnica e relatórios de
+                                engenharia.
+                            </p>
+                            <a class="flex items-center gap-2 text-primary-container font-bold text-sm uppercase tracking-widest group-hover:gap-4 transition-all"
+                                href="#">
+                                Ver detalhes <span class="material-symbols-outlined text-[#CEDC00]">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Diferenciais Section -->
+            <section class="py-xl bg-primary-container text-white">
+                <div class="container mx-auto px-8 md:px-20 max-w-7xl">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                        <div>
+                            <h2 class="font-headline-lg text-headline-lg mb-8">Por que escolher a Alpha Dive?</h2>
+                            <p class="font-body-lg text-slate-300 mb-12">
+                                Nosso compromisso é com o sucesso técnico e a segurança total de cada operação,
+                                entregando
+                                resultados que excedem as expectativas.
+                            </p>
+                            <div class="grid grid-cols-1 gap-8">
+                                <div class="flex items-start gap-4">
+                                    <div class="bg-[#CEDC00] p-3 flex items-center justify-center">
+                                        <span class="material-symbols-outlined text-primary-container">history</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-headline-md text-lg mb-2">10+ Anos de Experiência</h4>
+                                        <p class="text-slate-400 text-sm">Expertise comprovada em diversos cenários
+                                            offshore
+                                            e portuários.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <div class="bg-[#CEDC00] p-3 flex items-center justify-center">
+                                        <span class="material-symbols-outlined text-primary-container">school</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-headline-md text-lg mb-2">Treinamento Constante</h4>
+                                        <p class="text-slate-400 text-sm">Equipes atualizadas com as mais recentes
+                                            normas de
+                                            segurança e operação.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <div class="bg-[#CEDC00] p-3 flex items-center justify-center">
+                                        <span class="material-symbols-outlined text-primary-container">biotech</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-headline-md text-lg mb-2">Equipamentos Modernos</h4>
+                                        <p class="text-slate-400 text-sm">Tecnologia de ponta para garantir precisão e
+                                            rapidez nas intervenções.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <div class="bg-[#CEDC00] p-3 flex items-center justify-center">
+                                        <span class="material-symbols-outlined text-primary-container">public</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-headline-md text-lg mb-2">Atuação Nacional</h4>
+                                        <p class="text-slate-400 text-sm">Mobilização ágil para atender toda a costa
+                                            brasileira e águas interiores.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <div class="bg-[#CEDC00] p-3 flex items-center justify-center">
+                                        <span class="material-symbols-outlined text-primary-container">security</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-headline-md text-lg mb-2">Foco em Segurança</h4>
+                                        <p class="text-slate-400 text-sm">Cultura organizacional baseada em risco zero e
+                                            conformidade rigorosa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden lg:block h-full min-h-[600px] bg-slate-800 relative">
+                            <img class="w-full h-full object-cover opacity-60"
+                                data-alt="high tech abstract representation of subsea data monitoring and technical precision engineering"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX_JIbhPrJqAzl2dfVHKsDfQVW8z1r8M9vRo_7YsaRaTV4izy3lz2dbHUUunttXqBQlTeFFvrZ7sskSUF1Mi15dL9GVflOn8eFQIjg52knqIicIV3Cv3NzLoclARRqBlKJXZLo_6ublLnMMTGFYC7hibfR31wZhgj7BmEoICJkTrcg-650w3iol3LlY0Jsdx1M8-8_6hk3UaFPq_JUQ2M4LSocEptmFcHGKZZUMu_h94ShyqP9Cbc6o_OnFnbJxka_LAipyAhYMrlJ" />
+                            <div class="absolute inset-0 flex items-center justify-center p-12">
+                                <div class="border-2 border-[#CEDC00] p-8 backdrop-blur-sm">
+                                    <h3 class="text-4xl font-black mb-4">COMPROMISSO<br />TÉCNICO</h3>
+                                    <p class="text-[#CEDC00] font-bold tracking-widest">QUALIDADE ASSEGURADA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="empresa">
+            <!-- Hero Section -->
+            <section class="relative h-[614px] flex items-center justify-center overflow-hidden">
+                <div class="absolute inset-0 z-0">
+                    <img alt="Empresa Alpha Dive" class="w-full h-full object-cover"
+                        data-alt="cinematic wide shot of professional offshore divers working near an oil rig platform at sunset with industrial equipment visible"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXKVk7SHXuFRcLOVOKgpLRlRgyB-LTlDpV2D2kdz4oHvPbEjwUxXO6GSxhSuTG8ECwc3H-ldfLQsa_-FkJ6WOGLSV3bu2sW-yO-t7tygdIWpoWO4YlGX-0dZH9F5MIjbDU_kglAZAUHJrvMPAflIip0KshmG-zgO5SLKd_n7K4TSkiigsjgDeJECuD-3YTmcy98BwAC_iCQOJYm1u3uQo7aiuY9_BAF4O9y0lfZ5ZQWhSDAw29kU3AuSq73Hw0pd78FHmYn27be3UQ" />
+                    <div class="absolute inset-0 bg-hero-overlay"></div>
+                </div>
+                <div class="relative z-10 text-center px-8">
+                    <h1 class="font-display-xl text-display-xl text-white mb-4">Quem Somos</h1>
+                    <div class="w-24 h-1 bg-[#CEDC00] mx-auto"></div>
+                </div>
+            </section>
+            <!-- Alpha Dive Intro -->
+            <section class="py-xl px-8 md:px-20 max-w-container-max mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-md items-center">
+                    <div class="space-y-md">
+                        <h2 class="font-headline-lg text-headline-lg text-primary-container">Alpha Dive</h2>
+                        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                            Fundada sobre os pilares da excelência técnica e segurança operacional, a Alpha Dive é
+                            referência nacional em engenharia submarina e serviços offshore. Com décadas de experiência
+                            acumulada em ambientes de alta complexidade, nossa equipe de mergulhadores e engenheiros
+                            entrega
+                            soluções precisas para a infraestrutura marítima global.
+                        </p>
+                        <p class="font-body-md text-body-md text-on-surface-variant">
+                            Nossa expertise abrange desde inspeções estruturais detalhadas até intervenções complexas de
+                            manutenção submarina. Combinamos o rigor da engenharia moderna com a coragem da exploração
+                            profissional, garantindo que cada operação seja executada com precisão cirúrgica e
+                            conformidade
+                            técnica absoluta.
+                        </p>
+                    </div>
+                    <div class="relative">
+                        <div
+                            class="aspect-square bg-surface-container rounded-lg overflow-hidden border border-outline-variant">
+                            <img alt="Alpha Dive Operações" class="w-full h-full object-cover"
+                                data-alt="high-tech commercial diving helmet and technical underwater equipment on a clean white laboratory table with soft studio lighting"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9DpPmQ18huXP33OLND2GbYJw5DWoadCezxHGdxyIGen2u9esv_m7XW-t2SY27-OVfE3m6jiqYopgkcoL5VVBUDfBKibNoTjj20p50uH9E7a-1BoqWOCeAz71lnNJFrzBNhzoP8b5fR15YunAaInMy6E4TFe9VLiQHsXZcT4edc6ATIOhWZw7oiTkb06hoJi7TAZfN4JIxodGF7QbfnNlfsygDHdSwjw3Ck39gQ-H2585O5kF03EIw3kO_kxURwZQDKOUVMHxef6Fs" />
+                        </div>
+                        <div class="absolute -bottom-6 -left-6 bg-[#CEDC00] p-6 rounded-lg shadow-xl hidden md:block">
+                            <span class="font-display-xl text-headline-lg text-[#002347] block">+20</span>
+                            <span class="font-label-sm text-label-sm text-[#002347] uppercase">Anos de
+                                Experiência</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Como Atuamos -->
+            <section class="bg-primary-container text-white py-xl px-8 md:px-20">
+                <div class="max-w-container-max mx-auto">
+                    <div class="mb-md text-center">
+                        <h2 class="font-headline-lg text-headline-lg text-white mb-4">Como atuamos</h2>
+                        <p class="font-body-lg text-on-primary-container max-w-3xl mx-auto">
+                            Inovação constante e planejamento estratégico são o coração de nossa metodologia
+                            operacional.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-md mt-lg">
+                        <div class="p-md bg-white/5 border border-white/10 rounded-lg backdrop-blur-sm">
+                            <span class="material-symbols-outlined text-[#CEDC00] text-4xl mb-4"
+                                data-icon="precision_manufacturing">precision_manufacturing</span>
+                            <h3 class="font-headline-md text-headline-md mb-2">Tecnologia</h3>
+                            <p class="font-body-md text-on-primary-container">
+                                Utilizamos drones submarinos (ROVs) de última geração e equipamentos de monitoramento em
+                                tempo real para garantir dados precisos e imagens em alta definição em qualquer
+                                profundidade.
+                            </p>
+                        </div>
+                        <div class="p-md bg-white/5 border border-white/10 rounded-lg backdrop-blur-sm">
+                            <span class="material-symbols-outlined text-[#CEDC00] text-4xl mb-4"
+                                data-icon="strategy">strategy</span>
+                            <h3 class="font-headline-md text-headline-md mb-2">Planejamento</h3>
+                            <p class="font-body-md text-on-primary-container">
+                                Cada missão é precedida por uma análise rigorosa de riscos e modelagem técnica,
+                                minimizando
+                                imprevistos e otimizando o tempo de execução em campo.
+                            </p>
+                        </div>
+                        <div class="p-md bg-white/5 border border-white/10 rounded-lg backdrop-blur-sm">
+                            <span class="material-symbols-outlined text-[#CEDC00] text-4xl mb-4"
+                                data-icon="verified">verified</span>
+                            <h3 class="font-headline-md text-headline-md mb-2">Soluções</h3>
+                            <p class="font-body-md text-on-primary-container">
+                                Entregamos relatórios técnicos detalhados e certificados, fornecendo suporte decisório
+                                estratégico para gestores de ativos e infraestrutura offshore.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Missão, Visão e Valores -->
+            <section class="py-xl px-8 md:px-20 max-w-container-max mx-auto">
+                <div class="text-center mb-lg">
+                    <h2 class="font-headline-lg text-headline-lg text-primary-container">Missão, Visão e Valores</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+                    <!-- Missão -->
+                    <div
+                        class="bg-white border border-outline-variant p-md flex flex-col h-full hover:shadow-lg transition-shadow">
+                        <div
+                            class="bg-surface-container-low w-16 h-16 flex items-center justify-center rounded-full mb-md">
+                            <span class="material-symbols-outlined text-primary-container text-3xl"
+                                data-icon="target">target</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary-container mb-4">Missão</h3>
+                        <p class="font-body-md text-on-surface-variant flex-grow">
+                            Prover soluções de engenharia e serviços submarinos com o mais alto padrão de segurança e
+                            precisão, garantindo a integridade dos ativos de nossos clientes através de inovação e
+                            excelência técnica.
+                        </p>
+                    </div>
+                    <!-- Visão -->
+                    <div
+                        class="bg-white border border-outline-variant p-md flex flex-col h-full hover:shadow-lg transition-shadow">
+                        <div
+                            class="bg-surface-container-low w-16 h-16 flex items-center justify-center rounded-full mb-md">
+                            <span class="material-symbols-outlined text-primary-container text-3xl"
+                                data-icon="visibility">visibility</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary-container mb-4">Visão</h3>
+                        <p class="font-body-md text-on-surface-variant flex-grow">
+                            Ser a referência global em operações de mergulho comercial e tecnologia offshore,
+                            reconhecida
+                            pela liderança em segurança operacional e pela capacidade de resolver os desafios submarinos
+                            mais complexos.
+                        </p>
+                    </div>
+                    <!-- Valores -->
+                    <div
+                        class="bg-white border border-outline-variant p-md flex flex-col h-full hover:shadow-lg transition-shadow">
+                        <div
+                            class="bg-surface-container-low w-16 h-16 flex items-center justify-center rounded-full mb-md">
+                            <span class="material-symbols-outlined text-primary-container text-3xl"
+                                data-icon="handshake">handshake</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary-container mb-4">Valores</h3>
+                        <ul class="font-body-md text-on-surface-variant space-y-2">
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-[#CEDC00] rounded-full"></span>
+                                Segurança inegociável</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-[#CEDC00] rounded-full"></span>
+                                Precisão técnica</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-[#CEDC00] rounded-full"></span>
+                                Ética e Transparência</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1.5 h-1.5 bg-[#CEDC00] rounded-full"></span>
+                                Sustentabilidade marinha</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Technical Spec CTA -->
+            <section class="py-xl px-8 md:px-20 bg-surface-container-low">
+                <div
+                    class="max-w-container-max mx-auto border border-outline-variant bg-white p-lg flex flex-col md:flex-row items-center justify-between gap-md">
+                    <div class="space-y-2">
+                        <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest"
+                            style="color: #CEDC00;">Compromisso com a Qualidade</span>
+                        <h2 class="font-headline-lg text-headline-lg text-primary-container">Pronto para o próximo
+                            desafio
+                            técnico?</h2>
+                        <p class="font-body-md text-on-surface-variant max-w-xl">Conheça nossa gama completa de serviços
+                            de
+                            inspeção, reparo e manutenção submarina.</p>
+                    </div>
+                    <button
+                        class="bg-primary-container text-white px-xl py-md rounded font-['Inter'] font-bold uppercase tracking-wider text-sm hover:translate-x-1 hover:bg-[#CEDC00] hover:text-[#002347] transition-all">
+                        Nossos Serviços
+                    </button>
+                </div>
+            </section>
+        </section>
+        <section id="servicos">
+            <!-- Hero Section -->
+            <section class="relative h-[614px] flex items-center justify-center bg-primary-container overflow-hidden">
+                <div class="absolute inset-0 z-0">
+                    <img class="w-full h-full object-cover opacity-40"
+                        data-alt="cinematic wide shot of professional commercial diver underwater inspecting complex oil rig infrastructure with blue ambient light"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnEtT-MizeoCP_FpEHsjeci3cTefOnDjlM7wU9Hc-iAyV66YYppPfv-T_i9AGwNzW-uS_S7XmH8X7siC0RkB--s9k8OAZ97tV-lQ0q43my6yOONcI15g9XpgP0n1LBfqHyFjOk4W1naJdMiD0rQklYpm79an3a9SZIB8qKQ2yKeuzLMhIKE6kbvu0q6JGILEYggKpgRBDBdbRMcuqEB8myLPpZS1JMxYQIujCoBglGmv2A2OWfIak_hyjnXAYsPI4kA1uHXDwF_6dO" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-container to-transparent opacity-60">
+                    </div>
+                </div>
+                <div class="relative z-10 text-center px-4 max-w-4xl">
+                    <h1 class="font-display-xl text-display-xl text-white mb-6">Serviços Subaquáticos e Offshore</h1>
+                    <p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl mx-auto">Soluções de
+                        engenharia
+                        de alta precisão e segurança máxima para operações complexas em ambientes marítimos extremos.
+                    </p>
+                </div>
+            </section>
+            <!-- 3.1 Áreas de Atuação -->
+            <section class="py-xl px-8 md:px-20 max-w-container-max mx-auto">
+                <div class="mb-lg">
+                    <span class="text-primary-fixed-dim font-label-sm uppercase tracking-[0.2em]">Especialidades</span>
+                    <h2 class="font-headline-lg text-headline-lg mt-2">Áreas de Atuação</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+                    <!-- Offshore Card -->
+                    <div
+                        class="group relative bg-white border border-outline-variant overflow-hidden hover:shadow-lg transition-all duration-300">
+                        <div class="h-64 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="industrial offshore platform standing tall in the open sea with clear blue sky and precise technical details visible"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT8ccay9Oq4QPrXergpF387C0dusiYwStckpx_Zw2O9hDugJzlQ7GaNwq0aypiznNGsMNmZM-9Vv2tdvbCA5E1tvBHWy4O-g_bsmPF0_m8Hz7q5zIExB2-Ay3YPmFcgr-XpZHsr-oNBnx57hV7un9Vlo-ROuKn8TsfCJrotvWIx82mSNa2tl8osTDIoppTccFNj3Bo7L9bvosRSetdzRDrh5fFnKdfSriCM19dZFvtsSZKAsq9Wzoeyeiqx4MWKX40ahajbehCPfdb" />
+                        </div>
+                        <div class="p-md">
+                            <h3 class="font-headline-md text-headline-md text-primary mb-4">Offshore</h3>
+                            <p class="font-body-md text-on-surface-variant mb-6">Operações integradas em plataformas e
+                                estruturas de exploração de óleo e gás em alto mar.</p>
+                            <button
+                                class="flex items-center text-primary font-label-sm group-hover:gap-2 transition-all">SABER
+                                MAIS <span
+                                    class="material-symbols-outlined ml-2 text-[#CEDC00]">arrow_forward</span></button>
+                        </div>
+                    </div>
+                    <!-- Navios Card -->
+                    <div
+                        class="group relative bg-white border border-outline-variant overflow-hidden hover:shadow-lg transition-all duration-300">
+                        <div class="h-64 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="massive commercial cargo vessel hull underwater showing barnacles and propellers with technical inspection lighting"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3S9snPLijmyYXyfVJ5eVUpCupaKoMkD2jLiQ3W14BMaflZW6_eZ41y8Nvqi_U7HMjFYo1q5N3YWDvAevW8CcqFziQztXj-sCfSFEbCTxjzkMIgS80DaDHGRtCmYJmMLMba6XF4AGSZbcN1dqDeB23EsD05aa_DWuRZ00I-lILnk7pfLnkoCj9sCiTERgThbwQzDRHkj_aIrktXUYP14WdVSM9qp5l_gjS5lFyMF-ob2sdbu0XSEwKmj4RGPtxUfoUdwdl9ldXpD-Q" />
+                        </div>
+                        <div class="p-md">
+                            <h3 class="font-headline-md text-headline-md text-primary mb-4">Navios</h3>
+                            <p class="font-body-md text-on-surface-variant mb-6">Manutenção, inspeção e reparos
+                                subaquáticos
+                                em embarcações de grande porte e suporte logístico.</p>
+                            <button
+                                class="flex items-center text-primary font-label-sm group-hover:gap-2 transition-all">SABER
+                                MAIS <span
+                                    class="material-symbols-outlined ml-2 text-[#CEDC00]">arrow_forward</span></button>
+                        </div>
+                    </div>
+                    <!-- Fornecimento Card -->
+                    <div
+                        class="group relative bg-white border border-outline-variant overflow-hidden hover:shadow-lg transition-all duration-300">
+                        <div class="h-64 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="organized high-grade industrial plumbing and offshore engineering materials like flanges and valves in a warehouse setting"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-tFG9oNLA-prOZ72XKUMyjBwLucubWJsXF07LC87EfYimCqgThAhyXh_sUJb2K2g_jtkmQfQYq3obPGuDtfefkbFooVEYmzpAx0dUH8yzKEN7qOIaWrytCrbHPxgOVcabW9uGjr46YZ5T1vzziUnc6ZpGrVKmbO4BBhh38lxOKIfr2YoiBJsI_oazpR-7OBQsZuYbP1pmYrZy03--ZgBZtS8nPY3Oluap3cwH5YPf3e-aGkcBOj4bHvOlhi4gPi2XirmerjXkwGM3" />
+                        </div>
+                        <div class="p-md">
+                            <h3 class="font-headline-md text-headline-md text-primary mb-4">Fornecimento de Materiais
+                            </h3>
+                            <p class="font-body-md text-on-surface-variant mb-6">Logística de precisão e suprimento de
+                                acessórios certificados para operações de mergulho e engenharia.</p>
+                            <button
+                                class="flex items-center text-primary font-label-sm group-hover:gap-2 transition-all">SABER
+                                MAIS <span
+                                    class="material-symbols-outlined ml-2 text-[#CEDC00]">arrow_forward</span></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 3.2 Serviços Especializados -->
+            <section class="bg-surface-container py-xl">
+                <div class="px-8 md:px-20 max-w-container-max mx-auto">
+                    <div class="mb-lg">
+                        <span class="text-primary-fixed-dim font-label-sm uppercase tracking-[0.2em]">Expertise
+                            Técnica</span>
+                        <h2 class="font-headline-lg text-headline-lg mt-2">Serviços Especializados</h2>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-lg">
+                        <!-- Column 1 -->
+                        <div class="space-y-md">
+                            <h3
+                                class="font-headline-md text-headline-md text-primary-container flex items-center border-b border-outline-variant pb-2">
+                                <span class="material-symbols-outlined mr-2">scuba_diving</span> Serviços Subaquáticos
+                            </h3>
+                            <ul class="space-y-3 font-body-md text-on-surface-variant">
+                                <li class="flex items-start"><span
+                                        class="material-symbols-outlined text-[#CEDC00] mr-2 text-sm">check_circle</span>
+                                    Inspeção por vídeo e foto (UWILD)</li>
+                                <li class="flex items-start"><span
+                                        class="material-symbols-outlined text-[#CEDC00] mr-2 text-sm">check_circle</span>
+                                    Limpeza de casco e polimento de hélice</li>
+                                <li class="flex items-start"><span
+                                        class="material-symbols-outlined text-[#CEDC00] mr-2 text-sm">check_circle</span>
+                                    Soldagem e corte subaquático</li>
+                                <li class="flex items-start"><span
+                                        class="material-symbols-outlined text-[#CEDC00] mr-2 text-sm">check_circle</span>
+                                    Recuperação de âncoras e correntes</li>
+                            </ul>
+                        </div>
+                        <!-- Column 2 -->
+                        <div class="space-y-md">
+                            <h3
+                                class="font-headline-md text-headline-md text-primary-container flex items-center border-b border-outline-variant pb-2">
+                                <span class="material-symbols-outlined mr-2">engineering</span> Outras Operações
+                            </h3>
+                            <ul class="space-y-3 font-body-md text-on-surface-variant">
+                                <li class="flex items-start"><span
+                                        class="material-symbols-outlined text-[#CEDC00] mr-2 text-sm">check_circle</span>
+                                    Salvatagem e reflutuação</li>
+                                <li class="flex items-start"><span
+                                        class="material-symbols-outlined text-[#CEDC00] mr-2 text-sm">check_circle</span>
+                                    Batimetria e sonar de varredura</li>
+                                <li class="flex items-start"><span
+                                        class="material-symbols-outlined text-[#CEDC00] mr-2 text-sm">check_circle</span>
+                                    Apoio à engenharia civil portuária</li>
+                                <li class="flex items-start"><span
+                                        class="material-symbols-outlined text-[#CEDC00] mr-2 text-sm">check_circle</span>
+                                    Manutenção de emissários e dutos</li>
+                            </ul>
+                        </div>
+                        <!-- Column 3 -->
+                        <div class="space-y-md">
+                            <h3
+                                class="font-headline-md text-headline-md text-primary-container flex items-center border-b border-outline-variant pb-2">
+                                <span class="material-symbols-outlined mr-2">precision_manufacturing</span> Serviços
+                                Técnicos
+                            </h3>
+                            <ul class="space-y-3 font-body-md text-on-surface-variant">
+                                <li class="flex items-start"><span
+                                        class="material-symbols-outlined text-[#CEDC00] mr-2 text-sm">check_circle</span>
+                                    Testes de estanqueidade</li>
+                                <li class="flex items-start"><span
+                                        class="material-symbols-outlined text-[#CEDC00] mr-2 text-sm">check_circle</span>
+                                    Ensaios não destrutivos (END)</li>
+                                <li class="flex items-start"><span
+                                        class="material-symbols-outlined text-[#CEDC00] mr-2 text-sm">check_circle</span>
+                                    Consultoria técnica em mergulho</li>
+                                <li class="flex items-start"><span
+                                        class="material-symbols-outlined text-[#CEDC00] mr-2 text-sm">check_circle</span>
+                                    Manutenção de válvulas de fundo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 3.3 Operações em TFO e FPSO -->
+            <section class="py-xl px-8 md:px-20 max-w-container-max mx-auto space-y-24">
+                <!-- TFO -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-lg items-center">
+                    <div>
+                        <span class="text-primary-fixed-dim font-label-sm uppercase tracking-[0.2em]">Operação
+                            Estrutural</span>
+                        <h2 class="font-headline-lg text-headline-lg mt-2 mb-6">Operações em TFO</h2>
+                        <p class="font-body-lg text-on-surface-variant mb-6">Oferecemos suporte técnico especializado
+                            para
+                            Terminais de Fornecimento Offshore (TFO), garantindo a integridade das conexões e a
+                            segurança
+                            das transferências de carga em condições adversas.</p>
+                        <div class="flex gap-4">
+                            <div class="bg-surface-container-high p-4 rounded-lg flex-1">
+                                <div class="text-primary font-bold text-lg mb-1">Precisão</div>
+                                <div class="text-on-surface-variant text-sm">Alinhamento milimétrico de conexões.</div>
+                            </div>
+                            <div class="bg-surface-container-high p-4 rounded-lg flex-1">
+                                <div class="text-primary font-bold text-lg mb-1">Segurança</div>
+                                <div class="text-on-surface-variant text-sm">Protocolos rigorosos de monitoramento.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative aspect-video bg-primary-container rounded-xl overflow-hidden shadow-2xl group">
+                        <img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
+                            data-alt="dramatic technical footage of a commercial diver working on a large underwater pipe connection at an offshore terminal"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA831rPs0RG5A3wVD0EMYiGZ9aHO1_je3gyjI0q9R4rKLuIw7Z2tYQR67XXs7f1dnui5g20-H3nmSB_ybNHlAASahEkeh3KeJ-4AtS6kVy7TukCczvECbZCDr2ZdKNkblzl4miv1tQ4cprihgMdGJDIsbQ2tYcDRRSDtN8Y55sdgfFXxzn4wRrNmn_5ZT3J3IIZb9rNOGWjNf5s3GIwoQ6jVr4a4uhxdAF93o0lydxTDottBIc65A9YZqTzhj0OqjQhzqu6nBaVAu7i" />
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div
+                                class="w-20 h-20 bg-[#CEDC00] rounded-full flex items-center justify-center text-[#002347] cursor-pointer hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-4xl"
+                                    style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute bottom-4 right-4 bg-primary/80 backdrop-blur px-3 py-1 text-xs text-white uppercase font-bold tracking-widest">
+                            Video Case: TFO Operations</div>
+                    </div>
+                </div>
+                <!-- FPSO -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-lg items-center">
+                    <div
+                        class="order-2 lg:order-1 relative aspect-video bg-primary-container rounded-xl overflow-hidden shadow-2xl group">
+                        <img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
+                            data-alt="aerial drone view of a massive FPSO vessel in the deep ocean with maintenance support vessels alongside"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCd0mL6X5ODt_M9ZwFreUCcx6GJT7GiD1WDuXgrWxrBLdR7S0V7eLrpwwZCdAV3qlnF3N5Ll8PYIifeXwo9GnFsSH41YG_SjbrhyN1J3wYl7fDoFeLK6YL-phRyxNIZWxjQGaYehlx6QADMbw1v89sdOPIrneBNG3BeXD1sbTXaUhiMWdxI1Hcl5bhALiCuBpou18pAl8zY_LKqoIYWcR6jYad5ftxJp3eYal2w0wlu57B3zt5Dqjrq-_jlNLrWaQy1rXcFjKOTrLk" />
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div
+                                class="w-20 h-20 bg-[#CEDC00] rounded-full flex items-center justify-center text-[#002347] cursor-pointer hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-4xl"
+                                    style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute bottom-4 right-4 bg-primary/80 backdrop-blur px-3 py-1 text-xs text-white uppercase font-bold tracking-widest">
+                            Video Case: FPSO Maintenance</div>
+                    </div>
+                    <div class="order-1 lg:order-2">
+                        <span class="text-primary-fixed-dim font-label-sm uppercase tracking-[0.2em]">Exploração
+                            Profunda</span>
+                        <h2 class="font-headline-lg text-headline-lg mt-2 mb-6">Operações em FPSO</h2>
+                        <p class="font-body-lg text-on-surface-variant mb-6">Suporte integral para Unidades Flutuantes
+                            de
+                            Produção, Armazenamento e Transferência (FPSO), incluindo inspeções de casco, sistemas de
+                            ancoragem e riser systems.</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center text-on-surface-variant font-body-md">
+                                <span class="material-symbols-outlined text-[#CEDC00] mr-3">verified</span> Certificação
+                                Classificatória Internacional
+                            </li>
+                            <li class="flex items-center text-on-surface-variant font-body-md">
+                                <span class="material-symbols-outlined text-[#CEDC00] mr-3">verified</span> Tecnologia
+                                de
+                                Mergulho Saturado e ROV
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- 3.4 Fornecimento de Materiais e Acessórios -->
+            <section class="bg-white py-xl border-t border-outline-variant">
+                <div class="px-8 md:px-20 max-w-container-max mx-auto">
+                    <div class="text-center mb-lg">
+                        <span class="text-primary-fixed-dim font-label-sm uppercase tracking-[0.2em]">Logística e
+                            Suprimentos</span>
+                        <h2 class="font-headline-lg text-headline-lg mt-2">Materiais e Acessórios</h2>
+                        <p class="font-body-md text-on-surface-variant max-w-2xl mx-auto mt-4">Catálogo completo de
+                            componentes de alta resistência para operações críticas subaquáticas e offshore.</p>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                        <!-- Material Items -->
+                        <div
+                            class="p-6 bg-surface-container-lowest border border-outline-variant hover:border-[#CEDC00] transition-colors group flex flex-col items-center text-center">
+                            <span
+                                class="material-symbols-outlined text-primary mb-3 group-hover:scale-110 group-hover:text-[#CEDC00] transition-transform">settings_input_component</span>
+                            <span class="font-label-sm text-primary uppercase">Flanges</span>
+                        </div>
+                        <div
+                            class="p-6 bg-surface-container-lowest border border-outline-variant hover:border-[#CEDC00] transition-colors group flex flex-col items-center text-center">
+                            <span
+                                class="material-symbols-outlined text-primary mb-3 group-hover:scale-110 group-hover:text-[#CEDC00] transition-transform">texture</span>
+                            <span class="font-label-sm text-primary uppercase">Mangotes</span>
+                        </div>
+                        <div
+                            class="p-6 bg-surface-container-lowest border border-outline-variant hover:border-[#CEDC00] transition-colors group flex flex-col items-center text-center">
+                            <span
+                                class="material-symbols-outlined text-primary mb-3 group-hover:scale-110 group-hover:text-[#CEDC00] transition-transform">line_weight</span>
+                            <span class="font-label-sm text-primary uppercase">Estopos</span>
+                        </div>
+                        <div
+                            class="p-6 bg-surface-container-lowest border border-outline-variant hover:border-[#CEDC00] transition-colors group flex flex-col items-center text-center">
+                            <span
+                                class="material-symbols-outlined text-primary mb-3 group-hover:scale-110 group-hover:text-[#CEDC00] transition-transform">link</span>
+                            <span class="font-label-sm text-primary uppercase">Manilhas</span>
+                        </div>
+                        <div
+                            class="p-6 bg-surface-container-lowest border border-outline-variant hover:border-[#CEDC00] transition-colors group flex flex-col items-center text-center">
+                            <span
+                                class="material-symbols-outlined text-primary mb-3 group-hover:scale-110 group-hover:text-[#CEDC00] transition-transform">anchor</span>
+                            <span class="font-label-sm text-primary uppercase">Âncoras</span>
+                        </div>
+                        <div
+                            class="p-6 bg-surface-container-lowest border border-outline-variant hover:border-[#CEDC00] transition-colors group flex flex-col items-center text-center">
+                            <span
+                                class="material-symbols-outlined text-primary mb-3 group-hover:scale-110 group-hover:text-[#CEDC00] transition-transform">toll</span>
+                            <span class="font-label-sm text-primary uppercase">Vedações</span>
+                        </div>
+                        <div
+                            class="p-6 bg-surface-container-lowest border border-outline-variant hover:border-[#CEDC00] transition-colors group flex flex-col items-center text-center">
+                            <span
+                                class="material-symbols-outlined text-primary mb-3 group-hover:scale-110 group-hover:text-[#CEDC00] transition-transform">build</span>
+                            <span class="font-label-sm text-primary uppercase">Válvulas</span>
+                        </div>
+                        <div
+                            class="p-6 bg-surface-container-lowest border border-outline-variant hover:border-[#CEDC00] transition-colors group flex flex-col items-center text-center">
+                            <span
+                                class="material-symbols-outlined text-primary mb-3 group-hover:scale-110 group-hover:text-[#CEDC00] transition-transform">plumbing</span>
+                            <span class="font-label-sm text-primary uppercase">Conexões</span>
+                        </div>
+                        <div
+                            class="p-6 bg-surface-container-lowest border border-outline-variant hover:border-[#CEDC00] transition-colors group flex flex-col items-center text-center">
+                            <span
+                                class="material-symbols-outlined text-primary mb-3 group-hover:scale-110 group-hover:text-[#CEDC00] transition-transform">hardware</span>
+                            <span class="font-label-sm text-primary uppercase">Cabos de Aço</span>
+                        </div>
+                        <div
+                            class="p-6 bg-surface-container-lowest border border-outline-variant hover:border-[#CEDC00] transition-colors group flex flex-col items-center text-center">
+                            <span
+                                class="material-symbols-outlined text-primary mb-3 group-hover:scale-110 group-hover:text-[#CEDC00] transition-transform">support</span>
+                            <span class="font-label-sm text-primary uppercase">Bóias</span>
+                        </div>
+                        <div
+                            class="p-6 bg-surface-container-lowest border border-outline-variant hover:border-[#CEDC00] transition-colors group flex flex-col items-center text-center">
+                            <span
+                                class="material-symbols-outlined text-primary mb-3 group-hover:scale-110 group-hover:text-[#CEDC00] transition-transform">construction</span>
+                            <span class="font-label-sm text-primary uppercase">Ferramental</span>
+                        </div>
+                        <div
+                            class="p-6 bg-surface-container-lowest border border-outline-variant hover:border-[#CEDC00] transition-colors group flex flex-col items-center text-center">
+                            <span
+                                class="material-symbols-outlined text-primary mb-3 group-hover:scale-110 group-hover:text-[#CEDC00] transition-transform">more_horiz</span>
+                            <span class="font-label-sm text-primary uppercase">Especiais</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- CTA Section -->
+            <section class="bg-primary-container text-white py-xl">
+                <div class="px-8 md:px-20 max-w-4xl mx-auto text-center">
+                    <h2 class="font-headline-lg text-headline-lg mb-6">Precisa de suporte técnico em águas profundas?
+                    </h2>
+                    <p class="font-body-lg mb-8 opacity-80">Nossa equipe de especialistas está pronta para planejar sua
+                        próxima operação com precisão e segurança.</p>
+                    <button
+                        class="bg-[#CEDC00] text-[#002347] px-10 py-4 font-bold uppercase tracking-widest hover:bg-[#D9E600] transition-all rounded-sm">Solicitar
+                        Orçamento Técnico</button>
+                </div>
+            </section>
+        </section>
+        <section id="portfolio">
+            <!-- Portfolio Hero Header -->
+            <header class="relative bg-primary-container text-white py-20 px-8 md:px-20 overflow-hidden">
+                <div class="absolute inset-0 opacity-20">
+                    <img alt="" class="w-full h-full object-cover"
+                        data-alt="dramatic underwater shot of a deep-sea submersible illuminated by powerful spotlights in dark blue oceanic depths with particles floating in water"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTb1ikEo9fOYd5Ux_nT4Yi5HpggnUpfrvoiA-2ZklopX8wXUppEQaLRz6SPcTBAZLnNsWTagWWmrLFALPnZE3JTL4SmjG-pFNGRj3yPVO5ghrF8wvWi9ztnU3_angqFesu17lcfAOM72DNpN5t4m91sVsjKZV51QXbffejar2xH_sAWtF-Qb4W8qj93gLZmghwM7QZCCNPtQ3Y4JFajIjAD2M6YIdjz5AzkDY_D7OOOoIwHjQnZIw9Lk3RXSD9SkM2rC_yVFonJsGy" />
+                </div>
+                <div class="relative z-10 max-w-4xl">
+                    <h1 class="font-display-xl text-display-xl mb-6">Portfólio</h1>
+                    <p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl">
+                        Registro visual das operações realizadas em campo pela Alpha Dive, demonstrando nossa excelência
+                        técnica em engenharia submarina e intervenções offshore de alta complexidade.
+                    </p>
+                </div>
+            </header>
+            <!-- Filter/Category Chips -->
+            <section
+                class="px-8 md:px-20 py-8 flex flex-wrap gap-3 border-b border-outline-variant bg-surface-container-lowest">
+                <span
+                    class="bg-primary-container text-on-primary-container px-4 py-1.5 font-label-sm rounded-full">Todos
+                    os Projetos</span>
+                <span
+                    class="bg-surface-container-high text-on-surface-variant px-4 py-1.5 font-label-sm rounded-full hover:bg-surface-container-highest cursor-pointer transition-colors">Inspeção
+                    NR-13</span>
+                <span
+                    class="bg-surface-container-high text-on-surface-variant px-4 py-1.5 font-label-sm rounded-full hover:bg-surface-container-highest cursor-pointer transition-colors">Manutenção
+                    de Plataformas</span>
+                <span
+                    class="bg-surface-container-high text-on-surface-variant px-4 py-1.5 font-label-sm rounded-full hover:bg-surface-container-highest cursor-pointer transition-colors">Operações
+                    ROV</span>
+                <span
+                    class="bg-surface-container-high text-on-surface-variant px-4 py-1.5 font-label-sm rounded-full hover:bg-surface-container-highest cursor-pointer transition-colors">Soldagem
+                    Subaquática</span>
+            </section>
+            <div class="px-8 md:px-20 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <article
+                    class="bg-white border border-outline-variant group overflow-hidden transition-all hover:shadow-lg">
+                    <div class="aspect-video overflow-hidden relative">
+                        <img alt=""
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            data-alt="commercial diver performing underwater welding on a massive metal structure with bright sparks and bubbles rising in clear blue water"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyfdKwyYiUuSlWfOnAhsX2sE4KLCfNq_pvXM6L2OuGx-jkf_hRBkleBwMeqU4pCU1V-887is13HhE5tzyC91uLBbPzBlRDjNfWr-POke2n_qhhaIS5xyyJMugsTt-1Kw0kIKuXePkDgYSfdxZsZ90pO3vpeGdKud6NMDHL2MGSNjQNCGZ7bX0GNoGMdJFj3ERe4-GtI4Pkx0VP78Tetq14i_N3V-EbsrrfgmUeGu5LLI0qfIhMyc0ujvNqLartyDBWIKiz2VzsPL-a" />
+                        <div
+                            class="absolute bottom-4 right-4 bg-[#CEDC00] text-[#002347] px-3 py-1 text-[10px] font-bold uppercase tracking-widest">
+                            Soldagem
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-[#CEDC00] font-label-sm mb-2">Bacia de Santos, SP</div>
+                        <h3 class="font-headline-md text-headline-md mb-2 text-primary">Reparo Estrutural P-66</h3>
+                        <p class="text-on-surface-variant font-body-md text-sm mb-4">Execução de soldagem hiperbárica
+                            para
+                            reforço de membros estruturais em lâmina d'água de 45m.</p>
+                        <div class="flex items-center gap-4 text-outline text-xs border-t border-slate-100 pt-4">
+                            <span class="flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-sm text-[#CEDC00]">schedule</span> Out
+                                2023</span>
+                            <span class="flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-sm text-[#CEDC00]">precision_manufacturing</span>
+                                SAT System</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Project Card 2 -->
+                <article
+                    class="bg-white border border-outline-variant group overflow-hidden transition-all hover:shadow-lg">
+                    <div class="aspect-video overflow-hidden relative">
+                        <img alt=""
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            data-alt="industrial ROV remote operated vehicle with mechanical arms floating in deep ocean water near a subsea pipeline system"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVqAoLz1aeitTQCdm1JaDMvQl3MZu4fCxcWVy69HnB4-CQB8YgpQj1hWf_YwTjuKTvZUK06uJZJ3joRW4QT2f9MqrlO8sGVqyf3-N1wFPS471xGsyAErPUrZARRphs6-_k-oUDTJ2Q7AUtGKCWgzmQvo1yZw4PuOix_JAVGLfC3Lfk6C5xoik30dticCQNc2LydOJkYGdk0jf1ZHt_yE0VhDKrJS-vHvktz7DTePTrtd_c0BGOpYFqsxgINoej_JA9GSLlcOcjtSv3" />
+                        <div
+                            class="absolute bottom-4 right-4 bg-[#CEDC00] text-[#002347] px-3 py-1 text-[10px] font-bold uppercase tracking-widest">
+                            ROV
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-[#CEDC00] font-label-sm mb-2">Campos de Petróleo, RJ</div>
+                        <h3 class="font-headline-md text-headline-md mb-2 text-primary">Inspeção de Dutos Submarinos
+                        </h3>
+                        <p class="text-on-surface-variant font-body-md text-sm mb-4">Mapeamento detalhado e verificação
+                            de
+                            integridade de 12km de linhas de produção utilizando ROV Work Class.</p>
+                        <div class="flex items-center gap-4 text-outline text-xs border-t border-slate-100 pt-4">
+                            <span class="flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-sm text-[#CEDC00]">schedule</span> Ago
+                                2023</span>
+                            <span class="flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-sm text-[#CEDC00]">water_drop</span> 800m
+                                Profundidade</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Project Card 3 (Bento-style vertical span) -->
+                <article
+                    class="bg-white border border-outline-variant group overflow-hidden transition-all hover:shadow-lg lg:row-span-2">
+                    <div class="h-[400px] overflow-hidden relative">
+                        <img alt=""
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            data-alt="high-tech diving support vessel on a calm sea at dawn with specialized cranes and equipment visible on deck"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPvZv7R-_crGGGn5B7A7pE0gzhuq4UiqidyOnlLxvqfmCATPoOdpDVXH6drucFhjiaLpL3SdO0ZazNbwchBeBz14rs1eZ00GbSiEWlGJEpVJxXDR2pXS3FgleHacMP_zYCmH1O6l5uDFqJqoQqUzOCuQt8qXn0Y2-Ol2bLpfK_e8-NVGQ9WCJFcW13qUPiai5rEZ5ZVnew-yUXNy-nrQhcEFPstGa_Ou-mZyTfm9bVG92PGsJjRHLEK7zmcOTyM6bdm28NqAhoShXY" />
+                        <div
+                            class="absolute bottom-4 right-4 bg-[#CEDC00] text-[#002347] px-3 py-1 text-[10px] font-bold uppercase tracking-widest">
+                            Logística
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-[#CEDC00] font-label-sm mb-2">Suporte Marítimo</div>
+                        <h3 class="font-headline-md text-headline-md mb-2 text-primary">Campanha de Apoio ao Mergulho
+                        </h3>
+                        <p class="text-on-surface-variant font-body-md text-sm mb-4">Mobilização completa de embarcação
+                            DSV
+                            para suporte a operações de saturação de longa duração em águas profundas.</p>
+                        <div class="flex items-center gap-4 text-outline text-xs border-t border-slate-100 pt-4">
+                            <span class="flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-sm text-[#CEDC00]">schedule</span> Jan-Jun
+                                2023</span>
+                            <span class="flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-sm text-[#CEDC00]">group</span> Equipe de 45
+                                Técnicos</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Project Card 4 -->
+                <article
+                    class="bg-white border border-outline-variant group overflow-hidden transition-all hover:shadow-lg">
+                    <div class="aspect-video overflow-hidden relative">
+                        <img alt=""
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            data-alt="technician in a clean room examining a specialized underwater camera lens with precision tools and blue lighting"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjy9hNu6U-46QoSWsdToAdmqAGUZc51GFLRPheJevYd2zitZ95mhLovopNh5yErUzHNi-hQ4A_XkVIz8LS_Qq1pkz3jotpVaKxi4dIUGPIesninWDVmKuCeUrewfza8lOJlL2goEVG6w5CNUOGBkz5K2cpQCDMFvwZOoAvLlTGM50rIVGqF2840XyAKdhQebVJ6-iHQYqx_3EIdL4LOu3DBMKrDcRk0RlJUeBPmRR3zGyVMYuGT8MyLwxzl_9F81y0G1hxV8ZxsTFX" />
+                        <div
+                            class="absolute bottom-4 right-4 bg-[#CEDC00] text-[#002347] px-3 py-1 text-[10px] font-bold uppercase tracking-widest">
+                            Inspeção
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-[#CEDC00] font-label-sm mb-2">Terminal Marítimo</div>
+                        <h3 class="font-headline-md text-headline-md mb-2 text-primary">Ensaios Não Destrutivos (END)
+                        </h3>
+                        <p class="text-on-surface-variant font-body-md text-sm mb-4">Aplicação de partículas magnéticas
+                            e
+                            ultrassom para detecção de fadiga em estacas de atracação.</p>
+                        <div class="flex items-center gap-4 text-outline text-xs border-t border-slate-100 pt-4">
+                            <span class="flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-sm text-[#CEDC00]">schedule</span> Mar
+                                2023</span>
+                            <span class="flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-sm text-[#CEDC00]">verified</span>
+                                Certificação
+                                NR-13</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Project Card 5 -->
+                <article
+                    class="bg-white border border-outline-variant group overflow-hidden transition-all hover:shadow-lg">
+                    <div class="aspect-video overflow-hidden relative">
+                        <img alt=""
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            data-alt="underwater view of massive concrete pillars of a bridge or pier encrusted with marine life in crystal clear water"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwI8h7iG_nmlh5N25z6CIwhLo7pSjKA1m9X0fF_W0rUE5q0EEhq7JoAHgNnH0Sg1sF7sHoXP8EDMaAy2vdy_wRbZlO_vWEM7n6dV0G8ojm8uaz3FER_E-uhFDXDqGwMnElJZYXzGyODoezw62TvWqz2g8OWq326orfyxxqqyRYsj5NLkHpc4mHtflHz1CKWEufjnLlOVIh04uoHe0QXEoY9cm7BMHEezAVUzcYUJC9YV66X_VEA8w3u2DtoBRNA3mox4QPLJ-O5KdA" />
+                        <div
+                            class="absolute bottom-4 right-4 bg-[#CEDC00] text-[#002347] px-3 py-1 text-[10px] font-bold uppercase tracking-widest">
+                            Engenharia
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-[#CEDC00] font-label-sm mb-2">Porto de Tubarão, ES</div>
+                        <h3 class="font-headline-md text-headline-md mb-2 text-primary">Limpeza e Recuperação de Pilares
+                        </h3>
+                        <p class="text-on-surface-variant font-body-md text-sm mb-4">Remoção de incrustações marítimas e
+                            aplicação de jaquetas de proteção catódica em infraestrutura portuária.</p>
+                        <div class="flex items-center gap-4 text-outline text-xs border-t border-slate-100 pt-4">
+                            <span class="flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-sm text-[#CEDC00]">schedule</span> Dez
+                                2022</span>
+                            <span class="flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-sm text-[#CEDC00]">shield</span> Proteção
+                                Anticorrosiva</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Load More Section -->
+            <div class="mt-16 flex justify-center">
+                <button
+                    class="bg-[#002347] text-white px-8 py-4 font-label-sm uppercase tracking-widest hover:bg-[#CEDC00] hover:text-[#002347] transition-all flex items-center gap-3">
+                    Ver mais projetos <span class="material-symbols-outlined">expand_more</span>
+                </button>
+            </div>
+            <!-- Technical Specs CTA -->
+            <section class="bg-surface-container py-16 px-8 md:px-20 text-center">
+                <div class="max-w-2xl mx-auto">
+                    <h2 class="font-headline-lg text-headline-lg text-primary mb-4">Precisa de suporte técnico em sua
+                        operação?</h2>
+                    <p class="text-on-surface-variant mb-8">Nossa equipe de engenheiros e mergulhadores está pronta para
+                        oferecer a solução técnica ideal para o seu desafio offshore.</p>
+                    <div class="flex flex-col md:flex-row justify-center gap-4">
+                        <button
+                            class="bg-[#CEDC00] text-[#002347] px-8 py-3 font-label-sm uppercase tracking-widest hover:opacity-90 transition-all">Solicitar
+                            Orçamento</button>
+                        <button
+                            class="border border-[#002347] text-[#002347] px-8 py-3 font-label-sm uppercase tracking-widest hover:bg-[#002347] hover:text-white transition-all">Baixar
+                            Deck Técnico</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="clientes">
+            <!-- Hero Section -->
+            <section class="relative bg-primary-container h-[400px] flex items-center overflow-hidden">
+                <div class="absolute inset-0 z-0">
+                    <img alt="" class="w-full h-full object-cover opacity-40 mix-blend-overlay"
+                        data-alt="dramatic aerial view of an offshore oil rig platform in the deep blue ocean during a cloudy day with cinematic lighting"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlvwrG921NvO1LJ607-fQ7sa83jutJ-GKOQAUMFrsxnw7HFpohzSVnSohoxMNqIpDt3AEfTisN39Zqk8TM-lNWCDiHFgmMAY6sJxq0iQ_6Gs1u25ipnqQuJweDlOWbj8NStPRIG4RKrQ3F6UMtxJP8_QsbeJSu8hhrU-xuNJqSetMf6lBshzhMxMsQ42AZs0Fu2toiYOl8YeKeyxN7Ppg4f134BtBmYiJDBC98JD6aFJngPQDYnjwNBi_n4Wkh_G87xlUOyEli44MP" />
+                    <div class="absolute inset-0 bg-gradient-to-r from-primary-container to-transparent opacity-80">
+                    </div>
+                </div>
+                <div class="relative z-10 container mx-auto px-8 md:px-20 max-w-container-max">
+                    <div class="max-w-3xl">
+                        <h1 class="font-display-xl text-display-xl text-white mb-6">Clientes</h1>
+                        <p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl leading-relaxed">
+                            Atuação em diversos segmentos marítimos, fornecendo soluções de engenharia subaquática de
+                            alta
+                            precisão e segurança para as maiores infraestruturas offshore do país.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Stats / Context Section -->
+            <section class="py-xl bg-white border-b border-surface-container-high">
+                <div class="container mx-auto px-8 md:px-20 max-w-container-max">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+                        <div class="flex flex-col border-l-4 border-[#CEDC00] pl-6 py-4">
+                            <span class="font-display-xl text-[48px] text-primary-container">15+</span>
+                            <span
+                                class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Anos
+                                de Experiência</span>
+                        </div>
+                        <div class="flex flex-col border-l-4 border-[#CEDC00] pl-6 py-4">
+                            <span class="font-display-xl text-[48px] text-primary-container">120+</span>
+                            <span
+                                class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Projetos
+                                Concluídos</span>
+                        </div>
+                        <div class="flex flex-col border-l-4 border-[#CEDC00] pl-6 py-4">
+                            <span class="font-display-xl text-[48px] text-primary-container">0%</span>
+                            <span
+                                class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Incidentes
+                                de Segurança</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Main Clients Grid -->
+            <section class="py-xl bg-surface-container-low">
+                <div class="container mx-auto px-8 md:px-20 max-w-container-max">
+                    <div class="mb-xl text-center md:text-left">
+                        <h2 class="font-headline-lg text-headline-lg text-primary-container mb-4">Principais Clientes
+                        </h2>
+                        <div class="h-1 w-20 bg-[#CEDC00] rounded-full mb-8"></div>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-md">
+                        <!-- Client Logo Card 1 -->
+                        <div
+                            class="bg-white border border-outline-variant p-10 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-500 hover:shadow-lg hover:border-primary group">
+                            <div class="text-center">
+                                <span
+                                    class="font-headline-md text-headline-md text-primary opacity-30 group-hover:opacity-100 transition-opacity">Transpetro</span>
+                            </div>
+                        </div>
+                        <!-- Client Logo Card 2 -->
+                        <div
+                            class="bg-white border border-outline-variant p-10 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-500 hover:shadow-lg hover:border-primary group">
+                            <div class="text-center">
+                                <span
+                                    class="font-headline-md text-headline-md text-primary opacity-30 group-hover:opacity-100 transition-opacity">Odebrecht</span>
+                            </div>
+                        </div>
+                        <!-- Client Logo Card 3 -->
+                        <div
+                            class="bg-white border border-outline-variant p-10 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-500 hover:shadow-lg hover:border-primary group">
+                            <div class="text-center">
+                                <span
+                                    class="font-headline-md text-headline-md text-primary opacity-30 group-hover:opacity-100 transition-opacity">Wilson
+                                    Sons</span>
+                            </div>
+                        </div>
+                        <!-- Client Logo Card 4 -->
+                        <div
+                            class="bg-white border border-outline-variant p-10 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-500 hover:shadow-lg hover:border-primary group">
+                            <div class="text-center">
+                                <span
+                                    class="font-headline-md text-headline-md text-primary opacity-30 group-hover:opacity-100 transition-opacity">Hidromares</span>
+                            </div>
+                        </div>
+                        <!-- Client Logo Card 5 -->
+                        <div
+                            class="bg-white border border-outline-variant p-10 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-500 hover:shadow-lg hover:border-primary group">
+                            <div class="text-center">
+                                <span
+                                    class="font-headline-md text-headline-md text-primary opacity-30 group-hover:opacity-100 transition-opacity">Fugro</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Sectors Served (Bento Style) -->
+            <section class="py-xl bg-white">
+                <div class="container mx-auto px-8 md:px-20 max-w-container-max">
+                    <div class="mb-xl">
+                        <h2 class="font-headline-lg text-headline-lg text-primary-container mb-4">Sectores de Atuação
+                        </h2>
+                        <p class="font-body-md text-body-md text-on-surface-variant max-w-xl">Nossa excelência técnica
+                            atende aos requisitos rigorosos de múltiplos segmentos da indústria oceânica.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-6 gap-md h-auto md:h-[600px]">
+                        <!-- Large Feature -->
+                        <div class="md:col-span-3 bg-primary-container relative group overflow-hidden">
+                            <img alt=""
+                                class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
+                                data-alt="professional commercial diver working underwater with specialized mechanical tools and welding equipment in clear blue water"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA46AKMzBg_GaiaRdeQESY8pQSwn4bcnJeqPPeQZB6LUJfolkpGTDie4W35W8fjMGlEfK14ZK0rFRRZr25G93QQx3l1DQXDmvXkW9Kf4I7CRXQj0W0D7jR8jPw1KG1c_7Ycl3c15B2_sG963MNxdxtbWVhdO5RkDKyKF6cVuFu83h0ymSrhBkBLfcnLpaTFGkZSdGPVXA9ZMqIkTQB7a7K6WbrrwoRWOuN2t4iJDi3Bhl7dhsJL06DItLi6C9Xf1ct2JeH82kj-gPXx" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent">
+                            </div>
+                            <div class="absolute bottom-0 p-8">
+                                <h3 class="font-headline-md text-headline-md text-white mb-2">Óleo e Gás</h3>
+                                <p class="font-body-md text-body-md text-on-primary-container">Manutenção de dutos e
+                                    plataformas offshore com precisão técnica.</p>
+                            </div>
+                        </div>
+                        <!-- Side Features -->
+                        <div class="md:col-span-3 grid grid-rows-2 gap-md">
+                            <div
+                                class="bg-surface-container-high p-8 flex flex-col justify-between border border-outline-variant group hover:border-[#CEDC00] transition-colors">
+                                <span class="material-symbols-outlined text-4xl text-primary mb-4">sailing</span>
+                                <div>
+                                    <h3 class="font-headline-md text-headline-md text-primary-container mb-2">
+                                        Infraestrutura
+                                        Portuária</h3>
+                                    <p class="font-body-md text-body-md text-on-surface-variant">Inspeção e reparo de
+                                        berços
+                                        de atracação e estruturas submersas.</p>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2 gap-md">
+                                <div
+                                    class="bg-[#CEDC00] p-6 flex flex-col justify-center text-primary-container group hover:bg-primary hover:text-white transition-all">
+                                    <span class="material-symbols-outlined text-3xl mb-4">analytics</span>
+                                    <h4 class="font-label-sm text-label-sm uppercase tracking-widest font-bold">
+                                        Levantamentos Ambientais</h4>
+                                </div>
+                                <div
+                                    class="bg-white p-6 border border-outline-variant flex flex-col justify-center group hover:shadow-md transition-shadow">
+                                    <span
+                                        class="material-symbols-outlined text-3xl text-primary-container mb-4">construction</span>
+                                    <h4
+                                        class="font-label-sm text-label-sm text-primary-container uppercase tracking-widest font-bold">
+                                        Engenharia Submarina</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- CTA Section -->
+            <section class="py-xl bg-primary-container text-white text-center">
+                <div class="container mx-auto px-8 md:px-20 max-w-3xl">
+                    <h2 class="font-headline-lg text-headline-lg mb-6">Pronto para elevar o padrão técnico de sua
+                        operação?
+                    </h2>
+                    <p class="font-body-lg text-body-lg text-on-primary-container mb-xl">Fale com nossos especialistas e
+                        descubra como a Alpha Dive pode otimizar seus projetos offshore.</p>
+                    <div class="flex flex-col md:flex-row justify-center gap-md">
+                        <button
+                            class="bg-[#CEDC00] text-primary-container font-bold py-4 px-10 rounded-lg uppercase tracking-widest text-sm hover:opacity-90 transition-all">
+                            Solicitar Orçamento
+                        </button>
+                        <button
+                            class="border border-on-primary-container text-white font-bold py-4 px-10 rounded-lg uppercase tracking-widest text-sm hover:bg-white/10 transition-all">
+                            Technical Specs
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="contato">
+            <!-- Hero Section -->
+            <section class="relative h-[409px] flex items-center justify-center overflow-hidden bg-primary-container">
+                <div class="absolute inset-0 z-0">
+                    <img class="w-full h-full object-cover opacity-40"
+                        data-alt="cinematic wide shot of deep ocean surface with sunlight rays penetrating through dark blue water creating technical mood"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeG6HtUqUPxwe9nzpEmYUXZOGNxmvkwGjBTTpwW3OoUcB67GNoohUPG38Ylt6kjOUuSz8LY-RhXbzQHD-l3P1oXhZ8dtCAYIpVYncYJdqDs3MegZ3un1FFWnE5RCGpBRZW0gKabgsXn3nOq_2UH2fyEYpcEHHZUGls8Hc3FCbqy1HBvKk4FHwuCG8cyv1ktSVx-jPZFq66PnQwfFbipv_CMnut5fbAbq1et0HSReg13UFU1VltLwzHLLhkcF4WoHITLGpZzaGVKqez" />
+                    <div class="absolute inset-0 hero-gradient"></div>
+                </div>
+                <div class="relative z-10 text-center px-8">
+                    <h1 class="font-display-xl text-display-xl text-white mb-4">Contato</h1>
+                    <p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl mx-auto">
+                        Entre em contato com nossa equipe especializada para soluções de engenharia subaquática e
+                        operações
+                        offshore de alta precisão.
+                    </p>
+                </div>
+            </section>
+            <!-- Main Content: Bento Grid Layout -->
+            <section class="max-w-container-max mx-auto px-8 md:px-20 py-xl">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+                    <!-- Form Section (8 Columns) -->
+                    <div
+                        class="lg:col-span-7 bg-surface-container-lowest border border-outline-variant p-lg rounded-none shadow-sm">
+                        <h2 class="font-headline-lg text-headline-lg text-primary-container mb-8">Formulário de Contato
+                        </h2>
+                        <form class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+                                <div class="flex flex-col space-y-2">
+                                    <label class="font-label-sm text-label-sm text-on-surface-variant">Nome</label>
+                                    <input
+                                        class="bg-white border border-outline-variant px-4 py-3 rounded-none focus:ring-2 focus:ring-[#CEDC00] focus:border-[#CEDC00] outline-none transition-all"
+                                        placeholder="Seu nome completo" type="text" />
+                                </div>
+                                <div class="flex flex-col space-y-2">
+                                    <label class="font-label-sm text-label-sm text-on-surface-variant">Email</label>
+                                    <input
+                                        class="bg-white border border-outline-variant px-4 py-3 rounded-none focus:ring-2 focus:ring-[#CEDC00] focus:border-[#CEDC00] outline-none transition-all"
+                                        placeholder="seu@email.com" type="email" />
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+                                <div class="flex flex-col space-y-2">
+                                    <label class="font-label-sm text-label-sm text-on-surface-variant">Phone</label>
+                                    <input
+                                        class="bg-white border border-outline-variant px-4 py-3 rounded-none focus:ring-2 focus:ring-[#CEDC00] focus:border-[#CEDC00] outline-none transition-all"
+                                        placeholder="(21) 00000-0000" type="tel" />
+                                </div>
+                                <div class="flex flex-col space-y-2">
+                                    <label class="font-label-sm text-label-sm text-on-surface-variant">Subject</label>
+                                    <select
+                                        class="bg-white border border-outline-variant px-4 py-3 rounded-none focus:ring-2 focus:ring-[#CEDC00] focus:border-[#CEDC00] outline-none transition-all">
+                                        <option>Serviços de Mergulho</option>
+                                        <option>Operações ROV</option>
+                                        <option>Inspeção Técnica</option>
+                                        <option>Outros</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="flex flex-col space-y-2">
+                                <label class="font-label-sm text-label-sm text-on-surface-variant">Message</label>
+                                <textarea
+                                    class="bg-white border border-outline-variant px-4 py-3 rounded-none focus:ring-2 focus:ring-[#CEDC00] focus:border-[#CEDC00] outline-none transition-all resize-none"
+                                    placeholder="Como podemos ajudar?" rows="5"></textarea>
+                            </div>
+                            <button
+                                class="w-full md:w-auto bg-secondary-container text-primary-container font-label-sm text-label-sm py-4 px-12 hover:bg-secondary-fixed transition-colors uppercase tracking-widest font-bold"
+                                type="submit">
+                                Enviar Mensagem
+                            </button>
+                        </form>
+                    </div>
+                    <!-- Contact Info Sidebar (5 Columns) -->
+                    <div class="lg:col-span-5 flex flex-col gap-gutter">
+                        <!-- Info Card -->
+                        <div class="bg-primary-container text-white p-lg flex flex-col space-y-8">
+                            <div>
+                                <h2 class="font-headline-md text-headline-md text-secondary-container mb-6">Informações
+                                    de
+                                    Contato</h2>
+                                <div class="space-y-6">
+                                    <div class="flex items-start gap-4">
+                                        <span class="material-symbols-outlined text-secondary-container">call</span>
+                                        <div>
+                                            <p class="font-label-sm text-on-primary-container uppercase">Telefones</p>
+                                            <p class="font-body-md">21 99889-7237</p>
+                                            <p class="font-body-md">21 99777-7441</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-4">
+                                        <span class="material-symbols-outlined text-secondary-container">mail</span>
+                                        <div>
+                                            <p class="font-label-sm text-on-primary-container uppercase">Email</p>
+                                            <p class="font-body-md">contato@alphadive.com.br</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-4">
+                                        <span
+                                            class="material-symbols-outlined text-secondary-container">location_on</span>
+                                        <div>
+                                            <p class="font-label-sm text-on-primary-container uppercase">Endereço</p>
+                                            <p class="font-body-md">Distrito Industrial de Itaguaí, Rio de Janeiro - RJ,
+                                                Brasil</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pt-8 border-t border-white/10">
+                                <h2 class="font-label-sm text-on-primary-container uppercase mb-4">Redes Sociais</h2>
+                                <div class="flex gap-4">
+                                    <a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-secondary-container hover:text-primary-container transition-all"
+                                        href="#">
+                                        <span class="material-symbols-outlined text-sm">share</span>
+                                    </a>
+                                    <a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-secondary-container hover:text-primary-container transition-all"
+                                        href="#">
+                                        <span class="material-symbols-outlined text-sm">chat</span>
+                                    </a>
+                                    <a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-secondary-container hover:text-primary-container transition-all"
+                                        href="#">
+                                        <span class="material-symbols-outlined text-sm">videocam</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Map Placeholder -->
+                        <div class="relative group h-full min-h-[300px] overflow-hidden bg-surface-container">
+                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                data-alt="abstract stylized topographical map with deep blue and gold accents representing a nautical chart or maritime navigation"
+                                data-location="Itaguaí"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoPS4UDdxEtcxMeBY-iOHNX9XBi88iLVfJW9xbKQ3MdxClIDazcu5GCDKYa1VtAnO7fXGhI-9EopcN2v47YVwWWjtRZLcaqE8DFX-8pyDBlLTUqUrOvXcmnG0gXU8zQb4rzP18jf8LexI2e7eTGPyyQdZ-neuOma6vUC9im7K2o3S0BwoqZOyMh9KMkP3piurULf3Myu7M1TP7jwWoBS8xkHIXyWLJKPy6oahnzOKa1HFBOAajHPrpVnR1G1ouoXyZkMw9anV8kdEB" />
+                            <div
+                                class="absolute inset-0 flex items-center justify-center bg-primary-container/20 backdrop-blur-[2px]">
+                                <div class="bg-white p-4 shadow-xl">
+                                    <span class="material-symbols-outlined text-primary-container text-4xl"
+                                        data-weight="fill">location_on</span>
+                                    <p class="font-label-sm text-primary-container mt-2">Base Itaguaí</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Technical Assurance Banner -->
+            <section class="bg-surface-container-high py-lg border-y border-outline-variant">
+                <div class="max-w-container-max mx-auto px-8 md:px-20 grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <p class="font-display-xl text-headline-lg text-primary-container">24/7</p>
+                        <p class="font-label-sm text-on-surface-variant uppercase">Suporte Operacional</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="font-display-xl text-headline-lg text-primary-container">100%</p>
+                        <p class="font-label-sm text-on-surface-variant uppercase">Segurança Certificada</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="font-display-xl text-headline-lg text-primary-container">50+</p>
+                        <p class="font-label-sm text-on-surface-variant uppercase">Engenheiros Senior</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="font-display-xl text-headline-lg text-primary-container">0</p>
+                        <p class="font-label-sm text-on-surface-variant uppercase">Incidentes LTI</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer
+        class="bg-[#002347] dark:bg-slate-950 text-white dark:text-slate-200 font-['Inter'] text-sm leading-relaxed w-full rounded-none border-t border-slate-700 dark:border-slate-800 flat no shadows">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 md:px-20 py-16 w-full">
+            <div class="space-y-6">
+                <div class="text-xl font-bold text-[#CEDC00]">Alpha Dive</div>
+                <p class="text-slate-300">
+                    Sua parceira estratégica para soluções subaquáticas complexas em todo o território nacional.
+                </p>
+            </div>
+            <div class="space-y-4">
+                <h4 class="font-bold text-white uppercase text-xs tracking-widest">Navegação</h4>
+                <nav class="flex flex-col gap-2">
+                    <a class="text-slate-300 hover:text-[#CEDC00] transition-all" href="#">Home</a>
+                    <a class="text-slate-300 hover:text-[#CEDC00] transition-all" href="#">Empresa</a>
+                    <a class="text-slate-300 hover:text-[#CEDC00] transition-all" href="#">Serviços</a>
+                    <a class="text-slate-300 hover:text-[#CEDC00] transition-all" href="#">Portfólio</a>
+                </nav>
+            </div>
+            <div class="space-y-4">
+                <h4 class="font-bold text-white uppercase text-xs tracking-widest">Contato</h4>
+                <p class="text-slate-300">contato@alphadive.com.br</p>
+                <p class="text-slate-300">+55 (21) 3333-0000</p>
+                <p class="text-slate-300">Macaé, RJ - Brasil</p>
+            </div>
+            <div class="space-y-4">
+                <h4 class="font-bold text-white uppercase text-xs tracking-widest">Social</h4>
+                <div class="flex gap-4">
+                    <a class="text-slate-300 hover:text-[#CEDC00] transition-all" href="#">LinkedIn</a>
+                    <a class="text-slate-300 hover:text-[#CEDC00] transition-all" href="#">Instagram</a>
+                    <a class="text-slate-300 hover:text-[#CEDC00] transition-all" href="#">YouTube</a>
+                </div>
+            </div>
+        </div>
+        <div
+            class="px-8 md:px-20 py-8 border-t border-slate-700 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-400 text-xs">
+            <div>© 2024 Alpha Dive. All rights reserved. Precision in Offshore Engineering.</div>
+            <div class="flex gap-6">
+                <a class="hover:text-[#CEDC00]" href="#">Privacy Policy</a>
+                <a class="hover:text-[#CEDC00]" href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    <a class="fixed bottom-8 right-8 z-[100] bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center"
+        href="#">
+        <svg class="w-8 h-8 fill-current" viewbox="0 0 24 24">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.432 5.631 1.433h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+            </path>
+        </svg>
+    </a>
+
+    <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>
