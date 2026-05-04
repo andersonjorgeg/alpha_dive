@@ -10,6 +10,7 @@ lerna-debug.log*
 # Config/Dependencies
 node_modules/
 planejamento/
+test/
 package-lock.json
 yarn.lock
 
